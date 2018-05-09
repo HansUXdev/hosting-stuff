@@ -18,18 +18,14 @@ hs aka hosting stuff is a command line tool hosting management system built with
 
 ## Usage
 ```
-Usage: contact [options] [command]
+Usage: hs [options] [command]
 
 
   Commands:
 
-    addContact|a           Add a contact
-    getContact|r <name>    Get contact
-    updateContact|u <_id>  Update contact
-    deleteContact|d <_id>  Delete contact
-    getContactList|l       List contacts
+    addDomain|d           Add a domain
 
-  Contact management system
+  Hosting management system
 
   Options:
 
