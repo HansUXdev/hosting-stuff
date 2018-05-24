@@ -56,7 +56,7 @@ hs ssl -c -a      // checks the ssl certs on all domain
 ![Alt Text](http://g.recordit.co/qW8AvmWtYr.gif)
 
 # Check DNS Propagation in bulk
-![Alt Text](http://g.recordit.co/JoCcLQBOjS.gif)
+![Alt Text](http://recordit.co/8GL1r3bN3d)
 # Check Website Security in bulk
 ![Alt Text](http://g.recordit.co/0wVZASTIcr.gif)
 
