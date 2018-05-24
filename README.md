@@ -44,13 +44,17 @@ Usage: hs [options] [command]
     -V, --version  output the version number
 ```
 
-## Examples
+## Examples / Uses
 ```
 hs d              // adds domain to db
 hs s -a           // runs a security check on all domains in db
 hs dns -p -a      // checks propogation of all domains
 hs ssl -c -a      // checks the ssl certs on all domain
 ```
+# Check DNS Propagation in bulk
+![Alt Text](http://g.recordit.co/JoCcLQBOjS.gif)
+# Check Website Security in bulk
+![Alt Text](http://g.recordit.co/0wVZASTIcr.gif)
 
 ## Puppetstring
 As the name suggests these are the strings I pull to make sure a site is working properly...

@@ -11,7 +11,9 @@ const {
 const { 
   addDomain, 
   // dnsDomain,
-  getDomainList
+  getDomainList,
+  getDomainProp,
+  getSecuri
   // updateDomains,
   // deleteDomains  
 } = require('./lib/domain.js'); 
@@ -42,15 +44,34 @@ program
 //   });
 
 
-// get domains
+// get domains and check dns propogation for all of them
 program
-  .command('getDomains <name>')
+  .command('getDomains')
   .alias('l')
   .description('Get Domains')
   .action( 
     () => getDomainList() 
   );
-  // .action(()) => getDomainList());
+
+
+// get domains and check dns propogation for all of them
+program
+  .command('getDomains')
+  .alias('dnsprop')
+  .description('Get Domains')
+  .action( 
+    () => getDomainProp() 
+  );
+
+// get domains and check dns propogation for all of them
+program
+  .command('getSecuri')
+  .alias('securi')
+  .description('Basic Bulk Security Check')
+  .action( 
+    () => getSecuri() 
+  );
+
 
 // console.log(`process:${process.argv}`);
 
