@@ -25,10 +25,23 @@ program
 // adds a domain to the db
 program
   .command('addDomain')
-  .alias('a')
+  .alias('add')
   .description('Add Domain')
+  // Ask some questions about the domain
   .action(() => {
-    prompt(questions).then((answers) =>
+    prompt([{
+      type : 'input',
+      name : 'domain',
+      message : 'Enter domain ..'
+    },
+    {
+      type : 'input',
+      name : 'server',
+      message : 'Enter Server Name ..'
+    }
+  ])
+  // then store the answers in the db with the addDomain function
+  .then((answers) =>
       // console.log(answers);
       addDomain(answers));
   });
@@ -47,7 +60,7 @@ program
 // get domains and check dns propogation for all of them
 program
   .command('getDomains')
-  .alias('l')
+  .alias('list')
   .description('Get Domains')
   .action( 
     () => getDomainList() 
@@ -57,7 +70,7 @@ program
 // get domains and check dns propogation for all of them
 program
   .command('getDomains')
-  .alias('dnsprop')
+  .alias('dnsbulk')
   .description('Get Domains')
   .action( 
     () => getDomainProp() 

@@ -46,11 +46,15 @@ Usage: hs [options] [command]
 
 ## Examples / Uses
 ```
-hs d              // adds domain to db
-hs s -a           // runs a security check on all domains in db
-hs dns -p -a      // checks propogation of all domains
+hs add            // adds a domain to db
+hs list           // lists domains in db
+hs securi         // runs a security check on all domains in db
+hs dnsbulk        // checks propogation of all domains
 hs ssl -c -a      // checks the ssl certs on all domain
 ```
+# Add/List Domains
+![Alt Text](http://g.recordit.co/qW8AvmWtYr.gif)
+
 # Check DNS Propagation in bulk
 ![Alt Text](http://g.recordit.co/JoCcLQBOjS.gif)
 # Check Website Security in bulk
