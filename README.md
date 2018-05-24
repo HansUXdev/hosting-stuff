@@ -8,7 +8,7 @@ I'm making this because, I effectively have three jobs. I work at a hosting comp
 
 
 ## Prerequisites
-0. Be an actual developer or atleast, someone who googles (not sorry bing, go <?php die()?> ).
+0. Be an actual developer or atleast, someone who googles (not sorry bing, go ```<?php die()?>``` ).
 1. Install [Node.js](https://nodejs.org/en/)
 2. Install [MongoDB](https://www.mongodb.org/downloads/)
 3. Install [Mongoose](http://mongoosejs.com/)
@@ -52,4 +52,10 @@ hs dns -p -a      // checks propogation of all domains
 hs ssl -c -a      // checks the ssl certs on all domain
 ```
 
+## Puppetstring
+As the name suggests these are the strings I pull to make sure a site is working properly...
+
+
+
+## Other
 Add thoughts to the issue and feel free to fork/etc.
