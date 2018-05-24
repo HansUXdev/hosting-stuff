@@ -18,8 +18,8 @@ I'm making this because, I effectively have three jobs. I work at a hosting comp
 
 
 ## Installation
-1. Clone the repository [here](https://github.com/mentrie/contacto)
-2. Navigate to your terminal and change your directory to the `contacto`.
+1. Clone the repository [here](https://github.com/HansUXdev/hosting-stuff)
+2. Navigate to your terminal and change your directory to the `hs`.
 3. Run `yarn` to install node dependencies.
 4. Run `yarn link` to creates a symbolic link between project directory and executable command.
 
