@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "js-yaml": "^3.4.6",
+    "rimraf": "^2.4.3",
+    "yargs": "^3.8.0",
     "commander": "^2.9.0",
     "inquirer": "^3.0.6",
     "mongoose": "^4.9.2",

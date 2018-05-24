@@ -1,0 +1,30 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 3000
+
+# The domains you want to 
+DOMAINS:
+  - url: "godaddy.com"
+    xid: "<xid>"
+    guid: "<guid>"
+    dns: "A"
+    server: "<server>"
+  - url: "godaddy.com"
+    xid: "<xid>"
+    guid: "<guid>"
+    dns: "A"
+    server: "<server>"
+
+DNS: "NS"
+
+
+# Gulp will reference these paths when it copies files
+CREDS:
+
+  # Path to dist folder
+  userid: "<userid>"  
+  
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  pass:
+    - "<pass1>"
+    - "<pass2>"
+
