@@ -6,7 +6,7 @@
 
 
 // current time
-echo "Begin the 500 error test...". date('h:i:s') . "\n";
+echo "Begin the 500 error test for WP...". date('h:i:s') . "\n";
 
 
 //// check if .htaccess exists, then rename it
@@ -21,11 +21,6 @@ echo "Begin the 500 error test...". date('h:i:s') . "\n";
 		    echo "... test file exists, putting it back...";
 		    rename(".htaccess.bad", ".htaccess");
 		}
-	    // ($GDaccess->file_exists('.htaccess.bad') ?: rename('.htaccess.bad', '.htaccess'));
-	    // if (file_exists('.htaccess.bad')) 
-    	// rename('', '$GDaccess') 
-	    // if(file_exists('$GDaccess'.'bad')) 
-	    // 	echo '\n access file put back together';
 	}
 
 //// Disable the plugins
