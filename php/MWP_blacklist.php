@@ -7,6 +7,7 @@
 $WP_BL   	= true;
 $WP_WC 	 	= "wp-content/plugins/";
 $MWP_BL = array(
+	"akismet", 		// used for testing purposes but not actually on blacklist
 	"6scan-backup", 
 	"6scan-protection",
 	"adminer",
@@ -59,21 +60,21 @@ $MWP_BL = array(
 
 
 
-echo "Begin the plugin blacklist test ...";
+echo nl2br("Begin the plugin blacklist test ...\n");
 
 	if ($WP_BL ) {
+		foreach ($MWP_BL as $WP_Plugin) {
+			// return false if not detected
+			echo nl2br(( file_exists( $WP_WC."$WP_Plugin") ) ? rename($WP_WC."$WP_Plugin",$WP_WC."$WP_Plugin"."-bad")."$WP_Plugin detected&&renamed \n": "$WP_Plugin plugin !detected\n");
 
-		echo (file_exists($WP_WC."akismet")) ? rename($WP_WC."akismet",$WP_WC."akismet-bad")."akismet detected..": nl2br("akismet plugin !detected||renamed...\n");
-
-		foreach ($MWP_BL as $value) {
-			echo (file_exists($WP_WC."$value")) ? rename($WP_WC."$value",$WP_WC."$value"."-bad"): nl2br("$value plugin !detected||renamed...\n");
 		}
 
 	}
 	if (!$WP_BL ) {
-		echo (file_exists($WP_WC."akismet-bad")) ? rename($WP_WC."akismet-bad",$WP_WC."akismet")."akismet-b detected..": "akismet plugin !detected||renamed...";
 
-		// unlink('MWP_blacklist.php');
-
+		foreach ($MWP_BL as $WP_Plugin) {
+			echo nl2br(( file_exists( $WP_WC."$WP_Plugin"."-bad") ) ? rename($WP_WC."$WP_Plugin"."-bad",$WP_WC."$WP_Plugin")."$WP_Plugin has been putback to normal \n": " $WP_Plugin plugin !detected \n");
+		}
+		unlink('MWP_blacklist.php');
 	}
 ?>
