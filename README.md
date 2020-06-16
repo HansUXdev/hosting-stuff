@@ -1,7 +1,23 @@
 # Hosting Stuff
 `hs` aka hosting stuff is a command line tool or as i would like it to eventually be, a `Hosting Management System` built with Node.js, MongoDB, Commanderjs, Inquirerjs, etc. 
-Not unlike a CRM, a HMS allows your to manage and automate your `hosting stuff and things` from the command line to make clients/customer a little bit easier to deal with...
+Not unlike a CRM, a HMS allows you to manage and automate your `hosting stuff and things` from the command line to make clients/customer a little bit easier to deal with...
 
+Whether it is at Godaddy or as a freelancer, it's not uncommon for me to an an email, phone call or text about some WordPress site, being hacked, having a 500 error, or some other problem. My client ofcourse want me to fix it and as do I because, it's my work, but either they cannot pay me (non-profit), they don't want to, or I'm just swampped.
+
+This was built as an semi-automated toolbox, hacked together over weekends in order to solve the most common issues and cut that volunteer work down from a few hours to a few minutes via a 3 step process.
+
+* Analysis -- Automatically analyze all sites in their hosting entironment with puppetter 
+(such as bulk security checks across all domain names on their account, automatic screenshots, etc). 
+* Diagnose -- Semi-Automatically identify issues (including unknown one's) via php scripts.
+* Fix the issue (manual or other wise)
+
+## STATUS
+This project is currently **ABANDONED**. I handed off every freelance client I had last year to people who have more time to serve their needs. It does however show a variety of technical skills such as:
+* Creative Problem Solving
+* Automation of repeatitive tasks
+* Advanced knowledge of LAMP stack, managed WordPress/ CPANEL hosting
+* Basic database (mongodb) stuff
+* Basic CLI creatation
 
 ## Background
 I'm making this because, I effectively have three jobs. I work at a hosting company, and a behavioral health aka mental hospitol and freelance developer. **The last thing I want to do off the clock, is deal with hosting shit for sites i developed x years ago.** So this project is built around me scripting the exact same things i do on a browser using puppetteer aka `puppetstrings`, then once the proof of concept is working, abstracting that into either a bulk task, & || into a cli tool. Part of this is matter of security vs privacy. If you have a config file such as config.yaml, db, etc then the cx/user info is potentially at risk one way or another, as opposesed when that info is stored in memory (cli) which is much more difficult to obtain but requires more work... 
