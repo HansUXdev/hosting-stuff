@@ -4,7 +4,7 @@ Not unlike a CRM, a HMS allows your to manage and automate your `hosting stuff a
 
 
 ## Background
-I'm making this because, I effectively have three jobs. I work at a hosting company, and a behavioral health aka mental hospitol and freelance developer. The last thing I want to do off the clock, is deal with hosting shit for sites i developed x years ago. So this project is built around me scripting the exact same things i do on a browser using puppetteer aka `puppetstrings`, then once the proof of concept is working, abstracting that into either a bulk task, & || into a cli tool. Part of this is matter of security vs privacy. If you have a config file such as config.yaml, db, etc then the cx/user info is potentially at risk one way or another, as opposesed when that info is stored in memory (cli) which is much more difficult to obtain but requires more work... 
+I'm making this because, I effectively have three jobs. I work at a hosting company, and a behavioral health aka mental hospitol and freelance developer. **The last thing I want to do off the clock, is deal with hosting shit for sites i developed x years ago.** So this project is built around me scripting the exact same things i do on a browser using puppetteer aka `puppetstrings`, then once the proof of concept is working, abstracting that into either a bulk task, & || into a cli tool. Part of this is matter of security vs privacy. If you have a config file such as config.yaml, db, etc then the cx/user info is potentially at risk one way or another, as opposesed when that info is stored in memory (cli) which is much more difficult to obtain but requires more work... 
 
 
 ## Prerequisites
